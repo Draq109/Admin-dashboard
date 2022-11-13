@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  grid-template: 20vh 80vh / 1fr 82.5vw;
+}
+
+.container div {
+  padding: 1rem;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: black;
+}
+
+.header {
+  background-color: white;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  align-items: center;
+}
+
+.search-box input[type="text"] {}
+
+.header ul {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+}
+
+.header ul,
+.header li {
+  font-size: 16px;
+  list-style-type: none;
+  margin: none;
+  padding: none;
+}
+
+.header .greet-user {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  grid-area: 2 / 1 / 3 / 2;
+}
+.header .header-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+
+.sidebar {
+  background-image: linear-gradient(160deg, #0093E9, #558a84);
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template: repeat(11, 1fr) / 1fr;
+  align-items: center;
+}
+
+.sidebar .side-content {
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  display: grid;
+  align-items: center;
+}
+
+.user-content {
+  background-color: #bccbde;
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template: 1fr / 3fr 1fr;
+  align-items: stretch;
+  column-gap: .7rem;
+  row-gap: .7rem;
+}
+.user-projects {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 2;
+  grid-template: 5rem repeat(3, 1fr) / repeat(2, 1fr);
+  column-gap: .7rem;
+  row-gap: .7rem;
+}
+
+.user-projects .project-title {
+  grid-area: 1 / 1 / 2 / 3;
+  font-family: inherit;
+  text-align: start;
+  font-size: 1.5rem;
+  align-self: end;
+  padding-bottom: .5rem;
+}
+
+.user-projects p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.user-projects .card {
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+
+.user-content .announcement{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+  column-gap: .7rem;
+  row-gap: .7rem;
+
+}
+.user-content .announcement h1 {
+  font-family: inherit;
+  text-align: start;
+  font-size: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+.user-content .card {
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
